@@ -2,7 +2,7 @@ package thread;
 
 public class MonitorCaptureTest {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Object sync = new Object();
         Thread t = new Thread(new WaitingThread(sync));
         t.start();
@@ -28,11 +28,11 @@ public class MonitorCaptureTest {
 
         private Object sync;
 
-        public WaitingThread(Object sync) {
+        public WaitingThread (Object sync) {
             this.sync = sync;
         }
 
-        public void run() {
+        public void run () {
             synchronized (sync) {
                 System.out.println("own:: Waiting");
                 try {

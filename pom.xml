@@ -21,6 +21,13 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+    		<groupId>org.postgresql</groupId>
+    		<artifactId>postgresql</artifactId>
+    		<version>42.2.2</version>
+		</dependency>
+	
 		<dependency>
   			<groupId>CribForHelp</groupId>
 			<artifactId>Crib</artifactId>

@@ -29,47 +29,47 @@ public class ArrayAndOLinkedList {
         System.out.println("LL  add = " + (System.nanoTime() - startTime) + "\n");
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) al.add((int) (Math.random() * al.size()), new Integer(i));
+        for (int i = 0; i < 10000; i++) al.add((int) (Math.random() * al.size()), new Integer(i));
         System.out.println("AL expand = " + (System.nanoTime() - startTime));
 
         startTime = System.nanoTime();
         // ListIterator<Integer> it = ll.listIterator(ll.size() / 2);
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 10000; i++) {
             // it.add(new Integer(i));
             ll.add((int) (Math.random() * ll.size()), new Integer(i));
         }
         System.out.println("LL expand = " + (System.nanoTime() - startTime + "\n"));
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) al.remove((int) (Math.random() * al.size()));
+        for (int i = 0; i < 10000; i++) al.remove((int) (Math.random() * al.size()));
         System.out.println("AL remove = " + (System.nanoTime() - startTime));
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) ll.remove((int) (Math.random() * ll.size()));
+        for (int i = 0; i < 10000; i++) ll.remove((int) (Math.random() * ll.size()));
         System.out.println("LL remove = " + (System.nanoTime() - startTime) + "\n");
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) al.get((int) (Math.random() * al.size()));
+        for (int i = 0; i < 10000; i++) al.get((int) (Math.random() * al.size()));
         System.out.println("AL get = " + (System.nanoTime() - startTime));
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) ll.get((int) (Math.random() * ll.size()));
+        for (int i = 0; i < 10000; i++) ll.get((int) (Math.random() * ll.size()));
         System.out.println("LL get = " + (System.nanoTime() - startTime) + "\n");
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) al.set((int) (Math.random() * al.size()), i);
+        for (int i = 0; i < 10000; i++) al.set((int) (Math.random() * al.size()), i);
         System.out.println("AL set = " + (System.nanoTime() - startTime));
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) ll.set((int) (Math.random() * ll.size()), i);
+        for (int i = 0; i < 10000; i++) ll.set((int) (Math.random() * ll.size()), i);
         System.out.println("LL set = " + (System.nanoTime() - startTime) + "\n");
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) al.add(0, i);
+        for (int i = 0; i < 10000; i++) al.add(0, i);
         System.out.println("AL add to position 0 = " + (System.nanoTime() - startTime));
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) ll.set(0, i);
+        for (int i = 0; i < 10000; i++) ll.set(0, i);
         System.out.println("LL add to position 0 = " + (System.nanoTime() - startTime) + "\n");
 
         startTime = System.nanoTime();
@@ -81,11 +81,11 @@ public class ArrayAndOLinkedList {
         System.out.println("LL remove last = " + (System.nanoTime() - startTime) + "\n");
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) al.add(al.size() / 2, i);
+        for (int i = 0; i < 10000; i++) al.add(al.size() / 2, i);
         System.out.println("AL add to middle = " + (System.nanoTime() - startTime));
 
         startTime = System.nanoTime();
-        for (int i = 0; i < 100; i++) ll.set(ll.size() / 2, i);
+        for (int i = 0; i < 10000; i++) ll.set(ll.size() / 2, i);
         System.out.println("LL add to middle = " + (System.nanoTime() - startTime));
     }
 }

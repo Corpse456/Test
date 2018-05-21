@@ -2,7 +2,7 @@ package perestanov;
 
 import java.util.Arrays;
 
-import fileOperation.ReaderFromFile;
+import workWithFiles.fileIO.ReaderFromFile;
 
 public class MassivNatural {
 

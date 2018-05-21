@@ -3,8 +3,8 @@ package IlyaMatrix;
 import java.util.ArrayList;
 import java.util.List;
 
-import fileOperation.ReaderFromFile;
-import fileOperation.WriterToFile;
+import workWithFiles.fileIO.ReaderFromFile;
+import workWithFiles.fileIO.WriterToFile;
 
 public class Matrix2 {
 

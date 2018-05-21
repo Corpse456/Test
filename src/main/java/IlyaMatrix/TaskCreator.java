@@ -1,6 +1,6 @@
 package IlyaMatrix;
 
-import fileOperation.WriterToFile;
+import workWithFiles.fileIO.WriterToFile;
 
 public class TaskCreator {
     public static void main (String[] args) {
